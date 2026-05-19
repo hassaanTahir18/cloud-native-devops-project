@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Processing Pipeline</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📦 Order & Transaction Engine</h1>
+    </header>
+
+    <div class="container">
+        <h2>Checkout Management Terminal</h2>
+        <p>Service Status: <span class="status-badge">Online</span></p>
+        <p>Maintains transactional consistency while orchestrating live requests between payment gateways and storage databases.</p>
+
+        <form onsubmit="return false;">
+            <label for="cartId">Active Cart Identification</label>
+            <input type="text" id="cartId" placeholder="Cart GUID identifier...">
+            
+            <button type="submit">Process Secure Check Out</button>
+        </form>
+    </div>
+
+</body>
+</html>

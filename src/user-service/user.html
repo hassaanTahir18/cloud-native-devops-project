@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Service Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>👤 Account Security & User Profiles</h1>
+    </header>
+
+    <div class="container">
+        <h2>Authentication Gateway</h2>
+        <p>Service Status: <span class="status-badge">Online</span></p>
+        <p>Exposes REST APIs for frontend login validation using structured JSON Web Tokens (JWT).</p>
+        
+        <form onsubmit="return false;">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username required...">
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter secret password...">
+            
+            <button type="submit">Authenticate Session</button>
+        </form>
+    </div>
+
+</body>
+</html>
