@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🏷️ Product Catalog Management</h1>
+    </header>
+
+    <div class="container">
+        <h2>Active Inventory Control</h2>
+        <p>Service Status: <span class="status-badge">Online</span></p>
+        <p>Handles search parameters, metadata filtering, and inventory updates for listed storefront goods.</p>
+
+        <form onsubmit="return false;">
+            <label for="prodName">New Item Entry</label>
+            <input type="text" id="prodName" placeholder="Product name or label...">
+            
+            <label for="prodStock">Initial Stock Level</label>
+            <input type="number" id="prodStock" placeholder="Units available...">
+            
+            <button type="submit">Publish to Store Shelves</button>
+        </form>
+    </div>
+
+</body>
+</html>

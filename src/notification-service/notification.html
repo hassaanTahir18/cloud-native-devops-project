@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Service Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🔔 Message & Notification Broker</h1>
+    </header>
+
+    <div class="container">
+        <h2>Dispatched Event Log</h2>
+        <p>Service Status: <span class="status-badge">Online</span></p>
+        <p>Listens to systemic order success events to trigger transactional verification text alerts or automated SMTP email pipelines.</p>
+
+        <form onsubmit="return false;">
+            <label for="alertTarget">Target Email / Queue Destination</label>
+            <input type="email" id="alertTarget" placeholder="user@domain.com">
+            
+            <button type="submit">Dispatch Test Alert Broadcast</button>
+        </form>
+    </div>
+
+</body>
+</html>
