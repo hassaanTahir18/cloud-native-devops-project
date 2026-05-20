@@ -1,0 +1,41 @@
+# ----------------------------------------------------------------------
+# .gitignore
+# ----------------------------------------------------------------------
+
+# 1. Dependencies (These should be installed via package.json/requirements.txt)
+node_modules/
+vendor/
+npm-debug.log
+yarn-error.log
+yarn.lock
+package-lock.json
+
+# 2. Environment Variables & Secrets (CRITICAL SECURITY)
+# Never commit credentials. Your CI/CD or Kubernetes cluster should inject these.
+.env
+.env.*
+*.secret
+*.pem
+*.key
+
+# 3. Local Build Outputs & Caches
+dist/
+build/
+out/
+.cache/
+coverage/
+
+# 4. OS & System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# 5. IDE & Editor Configurations (Developer specific)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 6. Local Logs
+logs/
+*.log
