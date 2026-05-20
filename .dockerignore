@@ -1,0 +1,40 @@
+# ----------------------------------------------------------------------
+# .dockerignore
+# ----------------------------------------------------------------------
+
+# 1. Git Files (The container does not need version control history)
+.git
+.gitignore
+
+# 2. Docker Files (The container doesn't need instructions on how to build itself)
+Dockerfile
+.dockerignore
+
+# 3. Dependencies (Let Docker install a fresh, OS-specific batch inside the image)
+node_modules
+vendor
+
+# 4. Environment Variables (Pass these securely via Kubernetes Secrets/ConfigMaps)
+.env
+.env.*
+*.secret
+
+# 5. CI/CD & Orchestration Files (Only used externally by GitHub, Jenkins, or kubectl)
+.github
+Jenkinsfile
+kubernetes/
+k8s/
+*.yaml
+*.yml
+
+# 6. Local Build Outputs (Prevent local compiled code from overwriting container code)
+dist
+build
+out
+
+# 7. Documentation & OS Files
+README.md
+.DS_Store
+.vscode
+.idea
+*.log
